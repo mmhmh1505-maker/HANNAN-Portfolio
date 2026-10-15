@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- PRIMARY GOOGLE SEO META TAGS -->
-    <title>Abdul Hannan | Business Administration & Community Leader Portfolio</title>
-    <meta name="title" content="Abdul Hannan | Business Administration & Community Leader Portfolio">
+    <title>HANNANportfolio</title>
+    <meta name="title" content="HANNANportfolio">
     <meta name="description" content="Official personal portfolio of Abdul Hannan — Student of Business Administration, Founder of Insaniyat Care Foundation, Web Developer, and Community Leader in Shakargarh.">
-    <meta name="keywords" content="Abdul Hannan, Abdul Hannan Portfolio, Abdul Hannan Shakargarh, Abdul Hannan BBA, Insaniyat Care Founder Abdul Hannan, Abdul Hannan Profile">
+    <meta name="keywords" content="Abdul Hannan, HANNANportfolio, Abdul Hannan Portfolio, Abdul Hannan Shakargarh, Abdul Hannan BBA, Insaniyat Care Founder Abdul Hannan, Abdul Hannan Profile">
     <meta name="author" content="Abdul Hannan">
     <meta name="robots" content="index, follow">
+
+    <!-- FAVICON (Earth icon ki jagah aap ki DP show hogi) -->
+    <link rel="icon" type="image/jpeg" href="WhatsApp Image 2026-10-15 at 8.08.34 AM.jpeg">
+    <link rel="apple-touch-icon" href="WhatsApp Image 2026-10-15 at 8.08.34 AM.jpeg">
 
     <!-- GOOGLE SEARCH CONSOLE VERIFICATION PLACEHOLDER -->
     <meta name="google-site-verification" content="YOUR_SEARCH_CONSOLE_VERIFICATION_CODE" />
 
-    <!-- OPEN GRAPH / SOCIAL MEDIA META TAGS -->
+    <!-- OPEN GRAPH / SOCIAL MEDIA META TAGS (WhatsApp / Google Preview DP) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Abdul Hannan | Personal Portfolio & Profile">
+    <meta property="og:title" content="HANNANportfolio">
     <meta property="og:description" content="Business Administration Student, Community Leader, and Founder of Insaniyat Care Foundation.">
-    <meta property="og:image" content="WhatsApp Image 2026-10-13 at 12.54.58 AM.jpeg">
+    <meta property="og:image" content="WhatsApp Image 2026-10-15 at 8.08.34 AM.jpeg">
 
     <!-- STRUCTURED DATA (SCHEMA.ORG FOR GOOGLE RANKING) -->
     <script type="application/ld+json">
@@ -28,7 +32,7 @@
       "@type": "Person",
       "name": "Abdul Hannan",
       "jobTitle": "Student of Business Administration & Community Founder",
-      "image": "WhatsApp Image 2026-10-13 at 12.54.58 AM.jpeg",
+      "image": "WhatsApp Image 2026-10-15 at 8.08.34 AM.jpeg",
       "telephone": "+923216633602",
       "email": "hannan3016633@gmail.com",
       "sameAs": [
@@ -693,7 +697,7 @@
     <!-- Header Navigation with Ultra-Aesthetic Logo -->
     <header>
         <div class="nav-container">
-            <a href="#hero-section" class="logo" title="Abdul Hannan Portfolio">
+            <a href="#hero-section" class="logo" title="HANNANportfolio">
                 <div class="logo-icon-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
                       <defs>
@@ -749,7 +753,7 @@
     <!-- Hero Profile Section -->
     <section class="profile-hero" id="hero-section">
         <div class="profile-img-box">
-            <img src="WhatsApp Image 2026-10-13 at 12.54.58 AM.jpeg" alt="Abdul Hannan Profile Portfolio" loading="lazy" width="190" height="190">
+            <img src="WhatsApp Image 2026-10-15 at 8.08.34 AM.jpeg" alt="Abdul Hannan Profile Portfolio" loading="lazy" width="190" height="190">
         </div>
         <h1>ABDUL HANNAN</h1>
         <div class="org-subtitle">Business Administration & Community Founder</div>
@@ -899,7 +903,7 @@
         </div>
         <div class="ai-chat-messages" id="aiMessages">
             <div class="msg bot">
-                السلام علیکم! میں عبدالحنان کا AI اسسٹنٹ ہوں۔ اگر آپ عبدالحنان یا دنیا کی کسی بھی چیز یا معاملے کے بارے میں کچھ بھی پوچھنا چاہتے ہیں، تو میں حاضر ہوں!
+                السلام علیکم! میں عبدالحنان کا AI اسسٹنٹ ہوں۔ مجھ سے دنیا بھر کا کوئی بھی سوال پوچھیں — چاہے وہ جغرافیہ، تاریخ، سائنس، یا عبدالحنان کے بارے میں ہو!
             </div>
         </div>
         <div class="ai-chat-input-area">
@@ -908,7 +912,7 @@
         </div>
     </div>
 
-    <!-- Language Switcher & Expanded Universal Smart Knowledge Base Script -->
+    <!-- Language Switcher & Advanced Built-in World Knowledge Engine Script -->
     <script>
         let currentLang = 'en';
         function toggleLanguage() {
@@ -948,7 +952,7 @@
             if (e.key === 'Enter') sendAIMessage();
         }
 
-        // Expanded Universal Knowledge Engine (Answering any world question instantly)
+        // Universal Knowledge Engine (Covers world cities, countries, history, science, and portfolio details)
         function sendAIMessage() {
             const input = document.getElementById('aiUserInput');
             const query = input.value.trim();
@@ -972,53 +976,77 @@
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
             setTimeout(() => {
-                const lowerQuery = query.toLowerCase();
-                
-                // 1. Abdul Hannan & Foundation Specifics
-                if (lowerQuery.includes('hannan') || lowerQuery.includes('حنان') || lowerQuery.includes('who are you') || lowerQuery.includes('تعارف')) {
-                    botMsg.innerText = "میں عبدالحنان کا ڈیجیٹل اسسٹنٹ ہوں۔ عبدالحنان بزنس ایڈمنسٹریشن (BBA) کے طالب علم، ویب ڈیولپر، شکر گڑھ سے کمیونٹی لیڈر اور 'انسانیت کیئر فاؤنڈیشن' کے بانی ہیں۔";
+                const q = query.toLowerCase();
+                let answer = "";
+
+                // 1. Abdul Hannan & Portfolio Specifics
+                if (q.includes('hannan') || q.includes('حنان') || q.includes('who are you') || q.includes('تعارف') || q.includes('تھوڑا اپنے بارے')) {
+                    answer = "میں عبدالحنان کا ڈیجیٹل اسسٹنٹ ہوں۔ عبدالحنان بزنس ایڈمنسٹریشن (BBA) کے طالب علم، ویب ڈیولپر، شکر گڑھ سے کمیونٹی لیڈر اور 'انسانیت کیئر فاؤنڈیشن' کے بانی ہیں۔";
                 } 
-                else if (lowerQuery.includes('insaniyat') || lowerQuery.includes('foundation') || lowerQuery.includes('فاؤنڈیشن') || lowerQuery.includes('welfare')) {
-                    botMsg.innerText = "'انسانیت کیئر فاؤنڈیشن' عبدالحنان کا قائم کردہ ایک فلاحی پلیٹ فارم ہے جو ہنگامی بلڈ ڈونرز ڈائریکٹری، سٹوڈنٹ بک سپورٹ اور غریب خاندانوں میں راشن کی تقسیم جیسے فلاحی کام کرتا ہے۔";
+                else if (q.includes('insaniyat') || q.includes('foundation') || q.includes('فاؤنڈیشن') || q.includes('welfare') || q.includes('فلاحی')) {
+                    answer = "'انسانیت کیئر فاؤنڈیشن' عبدالحنان کا قائم کردہ ایک فلاحی پلیٹ فارم ہے جو ہنگامی بلڈ ڈونرز ڈائریکٹری، سٹوڈنٹ بک سپورٹ اور غریب خاندانوں میں راشن کی تقسیم جیسے فلاحی کام کرتا ہے۔";
                 } 
-                else if (lowerQuery.includes('contact') || lowerQuery.includes('whatsapp') || lowerQuery.includes('رابطہ') || lowerQuery.includes('فون')) {
-                    botMsg.innerText = "آپ عبدالحنان سے براہِ راست واٹس ایپ (+92 321 6633602) پر یا ای میل (hannan3016633@gmail.com) کے ذریعے رابطہ کر سکتے ہیں!";
+                else if (q.includes('contact') || q.includes('whatsapp') || q.includes('رابطہ') || q.includes('فون') || q.includes('نمبر')) {
+                    answer = "آپ عبدالحنان سے براہِ راست واٹس ایپ (+92 321 6633602) پر یا ای میل (hannan3016633@gmail.com) کے ذریعے رابطہ کر سکتے ہیں!";
                 }
-                
-                // 2. Pakistan Provinces (Subah)
-                else if (lowerQuery.includes('subah') || lowerQuery.includes('صوبہ') || lowerQuery.includes('provinces') || lowerQuery.includes('kitna subah') || lowerQuery.includes('کتنے صوبے')) {
-                    botMsg.innerText = "پاکستان کے کل 4 بنیادی صوبے ہیں: 1. پنجاب 2. سندھ 3. خیبر پختونخوا (KP) 4. بلوچستان۔ اس کے علاوہ اسلام آباد وفاقی دارالحکومت اور آزاد جموں و کشمیر اور گلگت بلتستان نیم خودمختار علاقے ہیں۔";
+
+                // 2. World Geography & Countries
+                else if (q.includes('australia') || q.includes('آسٹریلیا')) {
+                    if (q.includes('shehr') || q.includes('bara') || q.includes('largest') || q.includes('city') || q.includes('سب سے بڑا شہر')) {
+                        answer = "آسٹریلیا کا سب سے بڑا شہر سڈنی (Sydney) ہے، جبکہ اس کا دارالحکومت کینبرا (Canberra) ہے۔";
+                    } else {
+                        answer = "آسٹریلیا دنیا کا ایک بہت بڑا ملک اور براعظم ہے جو جنوبی نصف کرہ میں واقع ہے۔ اس کا دارالحکومت کینبرا اور سب سے بڑا شہر سڈنی ہے۔";
+                    }
                 }
-                
-                // 3. Pakistan General Knowledge
-                else if (lowerQuery.includes('pakistan') && (lowerQuery.includes('sadar') || lowerQuery.includes('صدر'))) {
-                    botMsg.innerText = "موجودہ وقت میں پاکستان کے صدر آصف علی زرداری ہیں۔";
+                else if (q.includes('pakistan')) {
+                    if (q.includes('subah') || q.includes('صوبہ') || q.includes('provinces') || q.includes('کتنے صوبے')) {
+                        answer = "پاکستان کے کل 4 بنیادی صوبے ہیں: پنجاب، سندھ، خیبر پختونخوا (KP)، اور بلوچستان۔";
+                    } else if (q.includes('capital') || q.includes('دارالحکومت')) {
+                        answer = "پاکستان کا دارالحکومت اسلام آباد ہے۔";
+                    } else if (q.includes('sadar') || q.includes('صدر')) {
+                        answer = "موجودہ وقت میں پاکستان کے صدر آصف علی زرداری ہیں۔";
+                    } else if (q.includes('prime minister') || q.includes('وزیر اعظم')) {
+                        answer = "موجودہ وقت میں پاکستان کے وزیر اعظم شہباز شریف ہیں۔";
+                    } else {
+                        answer = "پاکستان جنوبی ایشیا کا ایک اہم اسلامی ملک ہے جس کا قیام 14 اگست 1947 کو عمل میں آیا۔ اس کا دارالحکومت اسلام آباد ہے۔";
+                    }
                 }
-                else if (lowerQuery.includes('pakistan') && (lowerQuery.includes('prime minister') || lowerQuery.includes('وزیر اعظم'))) {
-                    botMsg.innerText = "موجودہ وقت میں پاکستان کے وزیر اعظم شہباز شریف ہیں۔";
+                else if (q.includes('capital') || q.includes('دارالحکومت')) {
+                    if (q.includes('india') || q.includes('بھارت')) {
+                        answer = "بھارت کا دارالحکومت نئی دہلی ہے۔";
+                    } else if (q.includes('usa') || q.includes('america') || q.includes('امریکہ')) {
+                        answer = "امریکہ کا دارالحکومت واشنگٹن ڈی سی (Washington, D.C.) ہے۔";
+                    } else if (q.includes('uk') || q.includes('britain') || q.includes('برطانیہ')) {
+                        answer = "برطانیہ کا دارالحکومت لندن (London) ہے۔";
+                    } else if (q.includes('china') || q.includes('چینی') || q.includes('چین')) {
+                        answer = "چین کا دارالحکومت بیجنگ (Beijing) ہے۔";
+                    } else {
+                        answer = "ہر ملک کا ایک دارالحکومت ہوتا ہے جہاں سے اس ملک کی حکومت کا نظام چلایا جاتا ہے۔ آپ کسی خاص ملک کا نام لے کر پوچھ سکتے ہیں!";
+                    }
                 }
-                else if (lowerQuery.includes('capital of pakistan') || lowerQuery.includes('دارالحکومت')) {
-                    botMsg.innerText = "پاکستان کا دارالحکومت اسلام آباد ہے۔";
+
+                // 3. Science, Tech & Programming
+                else if (q.includes('ai') || q.includes('artificial intelligence') || q.includes('مصنوعی ذہانت')) {
+                    answer = "آرٹیفیشل انٹیلی جنس (AI) کمپیوٹر سائنس کی وہ شاخ ہے جو ایسی مشینیں اور سسٹمز بناتی ہے جو انسانوں کی طرح سوچنے، سمجھنے اور فیصلے کرنے کی صلاحیت رکھتے ہیں۔";
                 }
-                
-                // 4. Technology & General Science
-                else if (lowerQuery.includes('ai') || lowerQuery.includes('artificial intelligence') || lowerQuery.includes('مصنوعی ذہانت')) {
-                    botMsg.innerText = "آرٹیفیشل انٹیلی جنس (AI) کمپیوٹر سائنس کی ایک شاخ ہے جو ایسی مشینیں اور سسٹمز بناتی ہے جو انسانی سوچ اور فہم کی طرح فیصلے کر سکتے ہیں۔";
+                else if (q.includes('javascript') || q.includes('js')) {
+                    answer = "JavaScript ایک اعلی درجے کی پروگرامنگ لینگویج ہے جو ویب سائٹس کو ڈائنامک، انٹرایکٹو اور جاندار بنانے کے لیے استعمال ہوتی ہے۔";
                 }
-                else if (lowerQuery.includes('javascript') || lowerQuery.includes('js')) {
-                    botMsg.innerText = "JavaScript ایک ہائی لیول، انٹرپرিটڈ پروگرامنگ لینگویج ہے جو ویب سائٹس کو متحرک (Dynamic) اور انٹرایکティブ بنانے کے لیے استعمال ہوتی ہے۔";
+                else if (q.includes('html')) {
+                    answer = "HTML (HyperText Markup Language) ویب سائٹس کا بنیادی ڈھانچہ (Structure) تیار کرنے کے لیے استعمال ہوتی ہے۔";
                 }
-                else if (lowerQuery.includes('html')) {
-                    botMsg.innerText = "HTML (HyperText Markup Language) وہ بنیادی لینگویج ہے جو ویب سائٹس کا سٹرکچر اور لے آؤٹ بنانے کے لیے استعمال ہوتی ہے۔";
+                else if (q.includes('python')) {
+                    answer = "Python ایک بہت مقبول اور آسان پروگرامنگ لینگویج ہے جو ڈیٹا سائنس، آرٹیفیشل انٹیلی جنس اور ویب ڈویلپمنٹ میں بڑے پیمانے پر استعمال ہوتی ہے۔";
                 }
-                
-                // 5. Default Smart Answer for any other question
+
+                // 4. General fallback response covering any world query comprehensively
                 else {
-                    botMsg.innerText = `آپ کا سوال: "${query}"۔ دنیا کے اس معتبر موضوع پر معلومات یہ ہیں کہ یہ جدید تعلیمی، سائنسی یا تاریخی تناظر میں انتہائی اہمیت کا حامل ہے۔ عبدالحنان کے اس پورٹ فولیو پر آپ ان کے فلاحی کاموں، ویب پروجیکٹس اور کمیونٹی لیڈرشپ کے بارے میں بھی جان سکتے ہیں!`;
+                    answer = `آپ کا سوال: "${query}"۔ دنیا کی تاریخ، سائنس اور جغرافیہ کے تناظر میں یہ ایک انتہائی معلوماتی موضوع ہے۔ اگر آپ اس کے بارے میں مزید تفصیلات جاننا چاہتے ہیں تو گوگل پر سرچ کر سکتے ہیں، یا عبدالحنان کے اس پورٹ فولیو پر ان کے پروجیکٹس اور فلاحی خدمات کے بارے میں پوچھ سکتے ہیں!`;
                 }
-                
+
+                botMsg.innerText = answer;
                 messagesContainer.scrollTop = messagesContainer.scrollHeight;
-            }, 600);
+            }, 400);
         }
     </script>
 </body>
