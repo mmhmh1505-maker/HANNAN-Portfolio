@@ -1090,9 +1090,9 @@
             <span class="music-title">Hannan Theme Audio</span>
             <span class="music-status" id="musicStatusText">Tap to Play</span>
         </div>
-        <!-- Embedded audio source from uploaded track -->
+        <!-- Connected using exact filename 'ssstik.io_1792765702648_2.mp3' -->
         <audio id="bgAudio" loop>
-            <source src="data:audio/mp3;base64,...YOUR_AUDIO_DATA..." type="audio/mp3">
+            <source src="ssstik.io_1792765702648_2.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -1138,8 +1138,9 @@
                     musicIcon.className = "fa-solid fa-pause";
                     musicStatusText.innerText = "Now Playing";
                     isPlaying = true;
-                }).catch(e => {
-                    alert('Audio playback requires user interaction or correct format support.');
+                }).catch(error => {
+                    alert('Audio play nahi ho saka! Yaqeen karlein ke "ssstik.io_1792765702648_2.mp3" file aapke GitHub repository folder mein mojood hai.');
+                    console.log(error);
                 });
             }
         }
@@ -1240,13 +1241,13 @@
                     answer = "'حنان یونیفارم ہاؤس' عبدالحنان کا ای کامرس ویب پروجیکٹ ہے جہاں سکول و کالج یونیفارمز دستیاب ہیں۔";
                 }
                 else if (q.includes('contact') || q.includes('whatsapp') || q.includes('رابطہ') || q.includes('فون')) {
-                    answer = "آپ عبدالحنان سے براہِ راست واٹس ایپ (+92 321 6633602) پر یا ای میل (hannan3016633@gmail.com) کے ذریعے رابطہ کر سکتے ہیں!";
+                    answer = "آپ عبدالحنان سے براہِ راست واٹس ایپ (+92 321 6633602) پر یا ای میل (hannan3016633@gmail.com) کے ذریعے رابطہ کر सकते हैं!";
                 }
                 else if (q.includes('pakistan')) {
                     answer = "پاکستان جنوبی ایشیا کا ایک اہم اسلامی ملک ہے جس کا دارالحکومت اسلام آباد ہے۔";
                 }
                 else {
-                    answer = `آپ کا سوال: "${query}"۔ اگر آپ اس کے بارے میں مزید تفصیلات جاننا چاہتے ہیں تو گوگل پر سرچ کر سکتے ہیں، یا عبدالحنان سے رابطہ کر سکتے ہیں!`;
+                    answer = `آپ کا سوال: "${query}"۔ اگر آپ اس کے بارے میں مزید تفصیلات جاننا چاہتے हैं تو گوگل پر سرچ कर सकते हैं, یا عبدالحنان سے رابطہ कर सकते हैं!`;
                 }
 
                 botMsg.innerText = answer;
